@@ -1,0 +1,29 @@
+#archivos a ignorar en el repositorio de git
+
+#$ .env Ignorara el archivo .env que contiene variables de entorno sensibles
+#$ .env.*  ignorara archivos que tengan el prefijo .env. como .env.local, .env.production, etc.
+.env
+.env.* 
+
+# Permitir plantilla de configuración de entorno
+#$ el ! delante sirve para indicar excepciones de la regla anterior, ya que si queremos 
+#$ que se suba al repositorio un archivo de ejemplo de variables de entorno
+!.env.example
+
+
+# Python
+__pycache__/
+*.py[cod]
+#$ Ignorar archivos de entorno virtual
+.venv/
+venv/
+
+# Archivos temporales
+#$ Ignora cualquier archivo que tenga la extension .log
+*.log
+
+# Archivos subidos
+#$ Ignora cualquier archivo dentro de la carpeta uploads
+#$ hace una excepcion para el archivo .gitkeep que sirve para mantener la carpeta vacia en el repositorio
+uploads/*
+!uploads/.gitkeep
