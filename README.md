@@ -3,7 +3,7 @@
 
 #### Estructuracion del proyecto en Arquitectura por capas - Separacion de responsabilidades
 
-Se opto por desarollar el programa con el fin de aprender y practicar la estructuracion de un CRUD convencional utilizando Python + FastAPI con Bootstrap y PostrgreSQL como motor de bases de datos. Ademas se utilizara Docker y Git para el empaquetamiento (Api, Bases de datos, volumenes) y control de versiones respectivamente.
+Se opto por desarollar el programa con el fin de aprender y practicar la estructuracion de un CRUD convencional utilizando Python + FastAPI con Bootstrap y PostrgreSQL como motor de bases de datos. Ademas se utilizara Docker, Git y Argon2-JWT para el empaquetamiento (Api, Bases de datos, volumenes), control de versiones y hasheo de contraseñas-autenticacion de usuario respectivamente.
 
 ### Estructura general del proyecto
 
@@ -22,6 +22,7 @@ Se opto por desarollar el programa con el fin de aprender y practicar la estruct
 - **services**: Reglas de negocio de la aplicacion, comprobacion de condiciones, forma en que se guardan y se prepara la informacion para ser guardada.
 - **static**: Carpeta contiene archivos que utilizamos para darle apariencia y comportamiento a nuestra aplicación, como estilos en css, scripts js, imagenes. Es el comportamiento estatico de la app para controlar solamente la apariencia general.
 - **templates**: Plantillas o vistas desarolladas en HTML con jinja2 y Bootstrap.
+- **core**: Centraliza la configuracion y variables del entorno.
 
 ## Descripcion del proyecto
 
